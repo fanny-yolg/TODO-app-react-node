@@ -27,9 +27,9 @@ mongoose.connect(process.env.MONGO_URI)
     })
 
 // routes
-const todoRoutes = require('./routes/todo');
-const categoryRoutes = require('./routes/category');
-const userRoutes = require('./routes/user');
+const todoRoutes = require('./api/routes/todo');
+const categoryRoutes = require('./api/routes/category');
+const userRoutes = require('./api/routes/user');
 
 
 app.use('/api/v1/todo', todoRoutes);
